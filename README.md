@@ -7,18 +7,15 @@
 -   [Technologies](#technologies)
 -   [Installation](#installation)
 -   [Usage](#usage)
--   [License](#license)
--   [Contributing](#contributing)
--   [Tests](#tests)
 -   [Questions](#questions)
 
 ## Description
 
-My task was to take the book search app built on RESTful API, and refactor it to be a GraphQL API built with Apollo Server.
+This app is a Google Books API search engine built with a RESTful API, and refactor it to be a GraphQL API built with Apollo Server. The app was built using the MERN stack, with a React front end, MongoDB database, and Node.js/Express.js server and API.
 
 ## Screenshot
 
-![Gif of Find A Book](./assets/find-a-book.gif)
+![screenshot](./assets/imgs/screencapture.png)
 
 ## Technologies
 
@@ -39,24 +36,14 @@ No installation required.
 
 ## Usage
 
-Open deployed app at https://evening-temple-29103.herokuapp.com/.
+Open deployed app at https://git.heroku.com/pure-brushlands-90155.git
+
 
 `Search for a book.`
 
 `Add the book to your list.`
 
 `Click "See Your Books" to see your list of books.`
-
-`Click "Buy on Google Books!" to purchase, or Delete a book from your list.`
-
-
-## Contributing
-
-N/A
-
-## Tests
-
-N/A
 
 ## Questions
 

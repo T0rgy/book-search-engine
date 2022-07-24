@@ -6,6 +6,7 @@ import Auth from '../utils/auth';
 import { searchGoogleBooks } from '../utils/API';
 import { saveBookIds, getSavedBookIds } from '../utils/localStorage';
 import { SAVE_BOOK } from '../utils/mutations';
+import { GET_ME } from '../utils/queries'
 
 const SearchBooks = () => {
   // create state for holding returned google api data
@@ -69,9 +70,18 @@ const SearchBooks = () => {
     }
 
     try {
-      // eslint-disable-next-line
-      const { data }  = await saveBook({
-        variables: { bookData: { ...bookToSave} }
+      await saveBook({
+        variables: { book: bookToSave },
+        update(cache, { data: { saveBook}}) {
+          try {
+            cache.writeQuery({
+              query: GET_ME,
+              data: { me: saveBook }
+            });
+          } catch (err) {
+            console.error(err);
+          }
+        }
       });
       
 

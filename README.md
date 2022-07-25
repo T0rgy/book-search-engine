@@ -36,7 +36,7 @@ No installation required.
 
 ## Usage
 
-Open deployed app at https://git.heroku.com/pure-brushlands-90155.git
+Open deployed app at https://pure-brushlands-90155.herokuapp.com/
 
 
 `Search for a book.`
